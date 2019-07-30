@@ -798,9 +798,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 868 "/usr/include/stdio.h" 3 4
 
 # 2 "directives.c" 2
-# 14 "directives.c"
+# 17 "directives.c"
 
-# 14 "directives.c"
+# 17 "directives.c"
 int main(int argc, char const *argv[])
 {
     int number = 9;

@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     area = PI * radius * radius;
     circumference = 2 * PI * radius;
 
-    printf("the circumference of the circle is %.2f\n", circumference);
-    printf("the area of the circle is %.2f\n", area);
+    printf("the circumference of the circle is %.2lf\n", circumference);
+    printf("the area of the circle is %.2lf\n", area);
     return 0;
 }

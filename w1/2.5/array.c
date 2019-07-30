@@ -7,7 +7,7 @@ void printStrArray(char **array, int size);
 int main(int argc, char const *argv[])
 {
     int a[10] = {0};
-    // printArray(a, sizeof(a) / sizeof(a[0]));
+    printArray(a, sizeof(a) / sizeof(a[0]));
     // for (int i = 0; i < sizeof(a) / sizeof(a[0]); ++i)
     // {
     //     printf("the index %d number is %d\n", i + 1, a[i]);
@@ -18,6 +18,9 @@ int main(int argc, char const *argv[])
     int b[10];
     b[2] = 3;
     printArray(b, sizeof(b) / sizeof(b[0]));
+
+
+    // char *   means a pointer point to char
 
     char *strArray[] = {"hello",
                         "world",
@@ -31,7 +34,8 @@ void printArray(int *array, int size)
 {
     for (int i = 0; i < size; ++i)
     {
-        printf("the index %d number is %d\n", i + 1, array[i]);
+        // printf("the index %d number is %d\n", i + 1, array[i]);
+        printf("the index %d number is %d\n", i + 1, *(array + i));
     }
 }
 
@@ -39,7 +43,7 @@ void printStrArray(char **array, int size)
 {
     for (int i = 0; i < size; ++i)
     {
-        // printf("the index %d number is %s\n", i, *(array + i));
-        printf("the index %d number is %s\n", i, array[i]);
+        printf("the index %d number is %s\n", i, *(array + i));
+        // printf("the index %d number is %s\n", i, array[i]);
     }
 }

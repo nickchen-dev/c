@@ -18,6 +18,7 @@ int main(int argc, char const *argv[])
     // You need to call srand() once,
     // to randomize the seed, and then call rand() in your loop:
     srand(time(NULL)); // randomize seed
+    // srand(100);
     int number = 6;
 
     for (int i = 0; i < number; ++i)
@@ -25,4 +26,6 @@ int main(int argc, char const *argv[])
         printf("The number %d is %d\n", i + 1, rand());
     }
     return 0;
+
+    // https://github.com/nickchen-dev/c
 }
