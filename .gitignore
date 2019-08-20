@@ -6,3 +6,9 @@
 
 # Unignore all dirs
 !*/
+
+# Ignore all
+a.out
+
+# Unignore makefile
+!makefile
